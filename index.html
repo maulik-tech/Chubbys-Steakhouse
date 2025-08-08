@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chubby’s Steakhouse — Gloucester City, NJ</title>
+  <meta name="description" content="Chubby’s Steakhouse — Your place. Eat well. Sip slowly. Classic steaks, seafood, and cocktails in Gloucester City, NJ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <meta property="og:title" content="Chubby’s Steakhouse — Gloucester City, NJ" />
+  <meta property="og:description" content="Classic steaks, seafood, and cocktails. Eat well. Sip slowly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Chubby’s Steakhouse">
+        <span class="brand-mark">CH</span>
+        <span class="brand-text">Chubby’s Steakhouse</span>
+      </a>
+      <nav id="site-nav" class="nav">
+        <a href="#menus">Menus</a>
+        <a href="#specials">Specials</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn-primary" href="#reserve">Reserve</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Eat Well. Sip Slowly.</h1>
+        <p>USDA “1855” Black Angus steaks, seafood classics, and a deep wine & spirits list — served with Jersey hospitality.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#menus">Explore Menus</a>
+          <a class="btn btn-ghost" href="#reserve">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menus" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Menus</h2>
+        <p class="section-subtitle">Hand-cut steaks, seafood, house-made desserts, and a curated bar program.</p>
+
+        <!-- Tab controls -->
+        <div class="tabs" role="tablist" aria-label="Menus">
+          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab-dinner" id="tab-btn-dinner">Dinner</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-after" id="tab-btn-after">After Dinner</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-bar" id="tab-btn-bar">The Bar</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-garden" id="tab-btn-garden">Garden Bar</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-happy" id="tab-btn-happy">Happy Hour</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-tuesday" id="tab-btn-tuesday">Two’s Day Tuesday</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-wine" id="tab-btn-wine">Wine List</button>
+        </div>
+
+        <!-- Tab panels -->
+        <div class="tab-panels">
+          <!-- Dinner -->
+          <div class="tab-panel is-active" id="tab-dinner" role="tabpanel" aria-labelledby="tab-btn-dinner">
+            <div class="grid">
+              <article class="card">
+                <h3>‘1855’ Steaks</h3>
+                <ul class="menu-list">
+                  <li><span>8 oz Filet Mignon</span><span class="price">56</span></li>
+                  <li><span>16 oz Ribeye</span><span class="price">54</span></li>
+                  <li><span>14 oz NY Strip</span><span class="price">52</span></li>
+                  <li><span>16 oz T‑Bone</span><span class="price">65</span></li>
+                </ul>
+                <p class="muted">USDA certified 1855 premium Black Angus Beef.</p>
+              </article>
+
+              <article class="card">
+                <h3>Dry‑Aged</h3>
+                <ul class="menu-list">
+                  <li><span>14 oz Kansas City Strip</span><span class="price">69</span></li>
+                  <li><span>16 oz Cowboy Ribeye</span><span class="price">79</span></li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <h3>From the Kitchen</h3>
+                <ul class="menu-list">
+                  <li><span>Land & Sea: 8 oz Filet + 5 oz Lobster Tail</span><span class="price">72</span></li>
+                  <li><span>Lollipop Lamb Chops (5)</span><span class="price">39</span></li>
+                  <li><span>Chicken Parmigiana</span><span class="price">34</span></li>
+                  <li><span>Surf & Turf Pasta</span><span class="price">44</span></li>
+                  <li><span>Pistachio Crusted Salmon</span><span class="price">38</span></li>
+                  <li><span>Gourmet Crab Cakes (2)</span><span class="price">46</span></li>
+                  <li><span>Cedar Plank Mahi Mahi</span><span class="price">32</span></li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <h3>Starters</h3>
+                <ul class="menu-list">
+                  <li><span>Filet Crostini</span><span class="price">16</span></li>
+                  <li><span>Prime Rib Spring Rolls</span><span class="price">16</span></li>
+                  <li><span>Italian Stuffed Peppers (2)</span><span class="price">14</span></li>
+                  <li><span>Bang Bang Shrimp</span><span class="price">18</span></li>
+                  <li><span>Sicilian Calamari</span><span class="price">18</span></li>
+                  <li><span>Burrata Bruschetta</span><span class="price">15</span></li>
+                  <li><span>Oysters on the Half Shell (6)</span><span class="price">MP</span></li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <h3>Soups & Salads</h3>
+                <ul class="menu-list">
+                  <li><span>Soup du Jour</span><span class="price">MP</span></li>
+                  <li><span>French Onion</span><span class="price">12</span></li>
+                  <li><span>Classic Caesar</span><span class="price">15 / 8</span></li>
+                  <li><span>Steakhouse Wedge</span><span class="price">15 / 8</span></li>
+                  <li><span>House Salad</span><span class="price">15 / 8</span></li>
+                  <li><span>Bang Bang Cobb Salad</span><span class="price">23 / 12</span></li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <h3>Sides, Surf & Sauces</h3>
+                <p class="muted">Sides for two (12): harvest vegetables, grilled asparagus, creamed or sautéed spinach, french beans & red pepper almondine, roasted mushrooms, baked potato, steak fries.</p>
+                <p class="muted">Surf options: jumbo shrimp (3) 15 · lump crab 18 · crab cake 23 · Oscar 18 · lobster tail (5 oz) 20.</p>
+                <p class="muted">Steak sauces/butters (+5): au poivre, béarnaise, demi‑glace, caramelized onions · bacon & scallion, gorgonzola, shallot herb, black garlic.</p>
+              </article>
+
+              <article class="card pdf">
+                <h3>Download PDF</h3>
+                <a class="btn btn-ghost" href="/menus/Dinner Menu.pdf" target="_blank" rel="noopener">Dinner Menu (PDF)</a>
+              </article>
+            </div>
+          </div>
+
+          <!-- After Dinner -->
+          <div class="tab-panel" id="tab-after" role="tabpanel" aria-labelledby="tab-btn-after">
+            <div class="grid">
+              <article class="card">
+                <h3>Desserts</h3>
+                <ul class="menu-list">
+                  <li><span>Tiramisu</span><span class="price">12</span></li>
+                  <li><span>Chocolate Mousse Cake</span><span class="price">12</span></li>
+                  <li><span>Crème Brûlée</span><span class="price">12</span></li>
+                  <li><span>Carrot Cake</span><span class="price">12</span></li>
+                  <li><span>Cheesecake of the Week</span><span class="price">12</span></li>
+                  <li><span>Old‑Fashioned Sundae</span><span class="price">10</span></li>
+                  <li><span>Cracker Jack Sundae</span><span class="price">10</span></li>
+                  <li><span>Dish of Ice Cream</span><span class="price">7</span></li>
+                  <li><span>Sorbet (lemon or raspberry)</span><span class="price">7</span></li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>After‑Dinner Drinks</h3>
+                <p class="muted">Selections include dessert wines, ports & sherries, cordials, brandy & cognac, bourbon & whiskey, single‑malt scotch, and classic cocktails (Old Fashioned, Tom Collins, Espresso Martini, Philly Special).</p>
+              </article>
+              <article class="card pdf">
+                <h3>Download PDF</h3>
+                <a class="btn btn-ghost" href="/menus/After Dinner.pdf" target="_blank" rel="noopener">After Dinner (PDF)</a>
+              </article>
+            </div>
+          </div>
+
+          <!-- The Bar -->
+          <div class="tab-panel" id="tab-bar" role="tabpanel" aria-labelledby="tab-btn-bar">
+            <div class="grid">
+              <article class="card">
+                <h3>Gourmet Burgers</h3>
+                <ul class="menu-list">
+                  <li><span>Steakhouse Burger</span><span class="price">12</span></li>
+                  <li><span>Chubby’s Bacon Burger</span><span class="price">14</span></li>
+                  <li><span>Black & Blue Burger</span><span class="price">12</span></li>
+                  <li><span>Mushroom Swiss Burger</span><span class="price">14</span></li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Sandwiches & Wings</h3>
+                <ul class="menu-list">
+                  <li><span>Signature Cheesesteak</span><span class="price">16</span></li>
+                  <li><span>Prime Rib French Dip</span><span class="price">16</span></li>
+                  <li><span>Grilled Chicken Sandwich</span><span class="price">14</span></li>
+                  <li><span>Italian Meatball Sub</span><span class="price">14</span></li>
+                  <li><span>Chicken Parm Sandwich</span><span class="price">14</span></li>
+                  <li><span>Chubby’s Chicken Wings</span><span class="price">14</span></li>
+                </ul>
+              </article>
+              <article class="card pdf">
+                <h3>Download PDF</h3>
+                <a class="btn btn-ghost" href="/menus/The Bar.pdf" target="_blank" rel="noopener">The Bar (PDF)</a>
+              </article>
+            </div>
+          </div>
+
+          <!-- Garden Bar -->
+          <div class="tab-panel" id="tab-garden" role="tabpanel" aria-labelledby="tab-btn-garden">
+            <div class="grid">
+              <article class="card">
+                <h3>Burgers & Bites</h3>
+                <ul class="menu-list">
+                  <li><span>Steakhouse Burger</span><span class="price">12</span></li>
+                  <li><span>Chubby’s Bacon Burger</span><span class="price">14</span></li>
+                  <li><span>Black & Blue Burger</span><span class="price">12</span></li>
+                  <li><span>Baby Back Ribs (Half Rack)</span><span class="price">16</span></li>
+                  <li><span>Prime Rib Spring Rolls</span><span class="price">16</span></li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Sandwiches & Wings</h3>
+                <ul class="menu-list">
+                  <li><span>Signature Cheesesteak</span><span class="price">16</span></li>
+                  <li><span>Prime Rib French Dip</span><span class="price">16</span></li>
+                  <li><span>Chicken Parm Sandwich</span><span class="price">14</span></li>
+                  <li><span>Crab & Brie Grilled Cheese</span><span class="price">19</span></li>
+                  <li><span>Classic Sloppy Joe</span><span class="price">12</span></li>
+                  <li><span>Chubby’s Famous Wings</span><span class="price">14</span></li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Beers, Seltzers & Shots</h3>
+                <p class="muted">White Claw & Surfside seltzers, domestic & craft beers (Founders All Day IPA, Dogfish Head SeaQuench) and seasonal Summer Sizzlers (Orange Crush, Batanga, Blood Orange Margarita, Crown Peach Spritz).</p>
+              </article>
+              <article class="card pdf">
+                <h3>Download PDF</h3>
+                <a class="btn btn-ghost" href="/menus/Garden Bar.pdf" target="_blank" rel="noopener">Garden Bar (PDF)</a>
+              </article>
+            </div>
+          </div>
+
+          <!-- Happy Hour -->
+          <div class="tab-panel" id="tab-happy" role="tabpanel" aria-labelledby="tab-btn-happy">
+            <div class="grid">
+              <article class="card">
+                <h3>Happy Hour</h3>
+                <p>Sun–Thurs · 5–7 PM · Bar only</p>
+                <ul class="menu-list">
+                  <li><span>$3 Miller Lite</span></li>
+                  <li><span>$4 Cape May IPA</span></li>
+                  <li><span>$5 Smithwick’s Irish Ale</span></li>
+                  <li><span>$7 House Wines</span></li>
+                  <li><span>$8 Tito’s Martini</span></li>
+                  <li><span>$9 Bulleit Old Fashioned</span></li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Appetizers · $12</h3>
+                <ul class="menu-list">
+                  <li><span>Filet Crostini</span></li>
+                  <li><span>Prime Rib Spring Rolls</span></li>
+                  <li><span>Burrata Bruschetta</span></li>
+                  <li><span>Italian Stuffed Peppers</span></li>
+                  <li><span>Chubby’s Chicken Wings</span></li>
+                </ul>
+              </article>
+              <article class="card pdf">
+                <h3>Download PDF</h3>
+                <a class="btn btn-ghost" href="/menus/Happy Hour.pdf" target="_blank" rel="noopener">Happy Hour (PDF)</a>
+              </article>
+            </div>
+          </div>
+
+          <!-- Two's Day Tuesday -->
+          <div class="tab-panel" id="tab-tuesday" role="tabpanel" aria-labelledby="tab-btn-tuesday">
+            <div class="grid">
+              <article class="card">
+                <h3>Two’s Day Tuesday</h3>
+                <p>$129 Prix Fixe for Two · Four Courses (shared portions) · *Tax & gratuity not included.</p>
+                <ul class="menu-list">
+                  <li><span>First Course: Choose two</span></li>
+                  <li><span>Second Course: Choose two</span></li>
+                  <li><span>Main: 1855 Steaks or Mains (shared)</span></li>
+                  <li><span>Dessert: Cheesecake, Crème Brûlée, Carrot Cake, Chocolate Fudge Cake</span></li>
+                </ul>
+              </article>
+              <article class="card pdf">
+                <h3>Download PDF</h3>
+                <a class="btn btn-ghost" href="/menus/Two Days Tuesday.pdf" target="_blank" rel="noopener">Two’s Day Tuesday (PDF)</a>
+              </article>
+            </div>
+          </div>
+
+          <!-- Wine List -->
+          <div class="tab-panel" id="tab-wine" role="tabpanel" aria-labelledby="tab-btn-wine">
+            <div class="grid">
+              <article class="card">
+                <h3>By the Glass</h3>
+                <ul class="menu-list">
+                  <li><span>Prosecco, Mionetto (NV)</span><span class="price">10</span></li>
+                  <li><span>Peter Paul Champagne (NV)</span><span class="price">16</span></li>
+                  <li><span>Chardonnay, “Live Free or Die” 2020</span><span class="price">14</span></li>
+                  <li><span>Sancerre 2023</span><span class="price">12</span></li>
+                  <li><span>Sauvignon Blanc, Kim Crawford 2024</span><span class="price">10</span></li>
+                  <li><span>Cabernet, Josh Cellars 2021</span><span class="price">14</span></li>
+                  <li><span>Merlot, Decoy 2021</span><span class="price">12</span></li>
+                  <li><span>Pinot Noir, Federalist 2022</span><span class="price">12</span></li>
+                  <li><span>Rosé, Gérard Bertrand</span><span class="price">12</span></li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>By the Bottle (Highlights)</h3>
+                <ul class="menu-list">
+                  <li><span>Veuve Clicquot Brut (NV)</span><span class="price">95</span></li>
+                  <li><span>Far Niente Chardonnay 2022</span><span class="price">79</span></li>
+                  <li><span>Peter Paul Bacigalupi Chardonnay 2021</span><span class="price">48</span></li>
+                  <li><span>Santa Margherita Pinot Grigio 2023</span><span class="price">42</span></li>
+                  <li><span>Caymus Cabernet Sauvignon 2022</span><span class="price">140</span></li>
+                  <li><span>Joseph Phelps Cabernet Sauvignon 2021</span><span class="price">135</span></li>
+                  <li><span>Jordan Cabernet 2020</span><span class="price">110</span></li>
+                  <li><span>La Crema Pinot Noir 2022</span><span class="price">42</span></li>
+                </ul>
+                <p class="muted small">Selections subject to change without notice. Corkage policy available upon request.</p>
+              </article>
+              <article class="card pdf">
+                <h3>Download PDF</h3>
+                <a class="btn btn-ghost" href="/menus/Wine List.pdf" target="_blank" rel="noopener">Wine List (PDF)</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specials" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Chef’s Notes</h2>
+        <p class="section-subtitle">Ask about Prime Rib (Fri & Sat, limited), seasonal sides, and weekly cheesecake flavor.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid grid-2">
+        <div>
+          <h2 class="section-title">About Us</h2>
+          <p>Chubby’s Steakhouse serves premium cuts, classic sides, and craft cocktails in a warm, vintage-inspired space. Our menu features USDA “1855” Black Angus, seafood favorites, and house-made desserts.</p>
+          <p class="muted small">Allergy notice: please inform your server of any allergies. Some items may be served raw or undercooked.</p>
+        </div>
+        <div class="card">
+          <h3>Gift Cards</h3>
+          <p>Give the gift of a Chubby’s experience — sometimes the most thoughtful gift is the easiest.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserve" class="section alt">
+      <div class="container grid grid-2">
+        <div>
+          <h2 class="section-title">Reservations</h2>
+          <p>Reserve your table below. We’ll confirm by email.</p>
+          <form name="reservation" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
+            <input type="hidden" name="form-name" value="reservation" />
+            <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+            <label>Full Name <input type="text" name="name" required /></label>
+            <label>Email <input type="email" name="email" required /></label>
+            <label>Phone <input type="tel" name="phone" required /></label>
+            <div class="grid grid-2">
+              <label>Date <input type="date" name="date" required /></label>
+              <label>Time <input type="time" name="time" required /></label>
+            </div>
+            <label>Party Size <input type="number" name="party" min="1" max="20" required /></label>
+            <label>Notes <textarea name="notes" rows="4" placeholder="Occasion, seating preferences, etc."></textarea></label>
+            <button class="btn btn-primary" type="submit">Request Reservation</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Private Events</h3>
+          <p>Celebrating something special? Ask us about private dining and group menus.</p>
+          <a class="btn btn-ghost" href="mailto:events@example.com">Inquire by Email</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="section">
+      <div class="container grid grid-2">
+        <div>
+          <h2 class="section-title">Visit</h2>
+          <p><strong>Address:</strong> 239 Monmouth Street, Gloucester City, NJ 08030</p>
+          <p><strong>Hours:</strong> Dinner nightly · Happy Hour Sun–Thurs 5–7 PM (bar only)</p>
+          <p><strong>Phone:</strong> <a href="tel:+1-000-000-0000">+1 (000) 000‑0000</a> <span class="muted small">(replace with your number)</span></p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#reserve">Book a Table</a>
+            <a class="btn btn-ghost" href="/menus/Dinner Menu.pdf" target="_blank" rel="noopener">Download Dinner Menu</a>
+          </div>
+        </div>
+        <div class="map-embed card">
+          <iframe
+            title="Map"
+            src="https://maps.google.com/maps?q=239%20Monmouth%20Street%2C%20Gloucester%20City%2C%20NJ%2008030&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand brand-footer">
+          <span class="brand-mark">CH</span>
+          <span class="brand-text">Chubby’s Steakhouse</span>
+        </div>
+        <p class="muted small">© <span id="year"></span> Chubby’s Steakhouse. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#menus">Menus</a>
+        <a href="#reserve">Reservations</a>
+        <a href="#visit">Visit</a>
+        <a href="/menus/Wine List.pdf" target="_blank" rel="noopener">Wine List (PDF)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
